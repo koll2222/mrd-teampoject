@@ -29,7 +29,7 @@ public class MainMenuUI : MonoBehaviour
 
     }
 
-    public void ChangeScreen()
+    public void ChangeScreen(RectTransform _target, RectTransform _obj)
     {
         //float backgroundPositionY = m_BackgroundImg.GetComponent<RectTransform>().anchoredPosition.y;
         float secondPositionY = m_SecondRect.anchoredPosition.y;
