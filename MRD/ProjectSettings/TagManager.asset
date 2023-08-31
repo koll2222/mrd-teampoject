@@ -50,3 +50,9 @@ TagManager:
   - name: Unit
     uniqueID: 304171813
     locked: 0
+  - name: Character
+    uniqueID: 3317808403
+    locked: 0
+  - name: Skill
+    uniqueID: 1154317205
+    locked: 0

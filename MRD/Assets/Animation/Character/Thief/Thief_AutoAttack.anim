@@ -26,7 +26,7 @@ AnimationClip:
       value: {fileID: 356387690, guid: 5fee6c9eb1da3e7459d46c6d6282f61b, type: 3}
     - time: 0.5
       value: {fileID: 1036048671, guid: 5fee6c9eb1da3e7459d46c6d6282f61b, type: 3}
-    - time: 0.6666667
+    - time: 0.75
       value: {fileID: 1036048671, guid: 5fee6c9eb1da3e7459d46c6d6282f61b, type: 3}
     attribute: m_Sprite
     path: 
@@ -59,7 +59,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.8333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -78,4 +78,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.41666666
+    functionName: PlaySkillEffect
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5
+    functionName: ProjectileAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

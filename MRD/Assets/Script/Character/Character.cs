@@ -7,13 +7,15 @@ public class Character : CharacterProperty
 {
     //TODO: 배틀 시스템 구현
 
-    [SerializeField] float m_attackSpeed = 1;
-    [SerializeField] float m_attackCoolTime = 0;
-    [SerializeField] float m_currentAttackCoolTime = 0;
-    [SerializeField] float m_attackRange = 5;
-
+    /* 개발 단계에서만 사용하는 코드 */
     public TMPro.TMP_InputField m_input = null;
     public TMPro.TextMeshProUGUI m_text = null;
+    public void OnInputFieldChange(TMPro.TMP_InputField _input)
+    {
+        SetAttackSpeed(float.Parse(_input.text));
+    }
+    public Transform m_myTarget = null;
+    /* 개발 단계에서만 사용하는 코드 */
 
     [SerializeField] float m_moveSpeed = 1;
 
@@ -38,6 +40,7 @@ public class Character : CharacterProperty
         switch (m_myState)
         {
             case STATE.Normal:
+                myAnim.ResetTrigger("attack");
                 Debug.Log("Normal");
                 StopAllCoroutines();
                 break;
@@ -49,21 +52,15 @@ public class Character : CharacterProperty
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Start");
+        SetStatus(); // 스폰 시킬 경우에는 지워야 함
+        SetAttackSpeed(m_attackSpeed);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    public void OnInputFieldChange(TMPro.TMP_InputField _input)
-    {
-        SetAttackSpeed(float.Parse(_input.text));
     }
 
     public void AddEnemy(Transform _enemy)
@@ -74,8 +71,10 @@ public class Character : CharacterProperty
 
     public void RemoveEnemy(Transform _enemy)
     {
+
         if (m_enemyList.Contains(_enemy))
         {
+            if (m_myTarget == _enemy) m_myTarget = null;
             m_enemyList.Remove(_enemy);
         }
         else
@@ -85,37 +84,77 @@ public class Character : CharacterProperty
         ChangeState();
     }
 
+    public void SetAttackTarget()
+    {
+        if (m_enemyList.Count > 0 && m_myTarget == null)
+        {
+            m_myTarget = m_enemyList[Random.Range(0, m_enemyList.Count)];
+        }
+    }
+
     void SetAttackSpeed(float _attackSpeed)
     {
         m_attackSpeed = _attackSpeed;
-
         m_attackCoolTime = 1f / m_attackSpeed;
-
         m_currentAttackCoolTime = m_attackCoolTime;
 
         if (m_attackSpeed > 1) myAnim.SetFloat("attackSpeed", m_attackSpeed);
         else myAnim.SetFloat("attackSpeed", 1);
-
-        m_text.text = string.Format("공격 속도 : {0}\n" +
-                                      "공격 애니메이션 재생하는데 걸리는 시간 : {1}\n" +
-                                      "공격 쿨타임 {2}/{3}", m_attackSpeed, 1f / m_attackSpeed, m_currentAttackCoolTime, m_attackCoolTime);
     }
-    
-    IEnumerator Attacking()
+
+    public void PlayEffect()    // 스킬 이펙트 재생
+    {
+        ObjectPool.Instance.GetSkillEffect(m_myClass, m_myGrade, m_attackSpeed, this.transform);
+    }
+
+    public void PlayHitEffect() // 스킬 피격 이펙트 재생
+    {
+        ObjectPool.Instance.GetHitEffect(m_skillData.m_name, 1, m_myTarget);
+    }
+
+    /* 나중에 바꿔야 함 */
+    [SerializeField]float timer = 1;
+    Coroutine coProjectile = null;
+
+    IEnumerator Projectile()
+    {
+        Vector2 pos = this.transform.position;
+        int i = 0;
+        while (i < m_skillData.m_strokes)
+        {
+            if (timer > 0.2f)
+            {
+                ObjectPool.Instance.GetProjectile(m_skillData.m_name, pos, 1, m_myTarget);
+                timer = 0;
+                i++;
+            }
+            else timer += Time.deltaTime;
+            yield return null;
+        }
+        StopCoroutine(coProjectile);
+    }
+
+    public void ThrowProjectile()
+    {
+        coProjectile = StartCoroutine(Projectile());
+    }
+    /* 나중에 바꿔야 함 */
+
+    IEnumerator Attacking() // 공격
     {
         while (true)
         {
-            if(m_currentAttackCoolTime >= m_attackCoolTime)
+            if (myAnim.GetBool("isAttacking")) yield return new WaitUntil(() => !myAnim.GetBool("isAttacking"));
+            if (m_currentAttackCoolTime >= m_attackCoolTime)
             {
+                SetAttackTarget();
                 myAnim.SetTrigger("attack");
                 m_currentAttackCoolTime = 0;
             }
-
-            m_text.text = string.Format("공격 속도 : {0}\n" +
-                                      "공격 애니메이션 재생하는데 걸리는 시간 : {1}\n" +
-                                      "공격 쿨타임 {2}/{3}", m_attackSpeed, 1f / m_attackSpeed, m_currentAttackCoolTime, m_attackCoolTime);
-
-            m_currentAttackCoolTime += Time.deltaTime;
+            else
+            {
+                m_currentAttackCoolTime += Time.deltaTime;
+            }
             yield return null;
         }
     }
