@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61891f1c4c498e64dbc52e49c8603fe3
+guid: 1763c4f3366320647a5f7b054947d899
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crimson Balrog_skill1_0
+      name: spritesheet (3)_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 311
-        width: 184
-        height: 311
+        x: 39
+        y: 39
+        width: 186
+        height: 313
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf978d5428c75e24085caa0a69404f95
-      internalID: 879698024
+      spriteID: 742183194a94d0949988952be9e12451
+      internalID: 1637363260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_skill1_1
+      name: spritesheet (3)_1
       rect:
         serializedVersion: 2
-        x: 372
-        y: 323
-        width: 174
+        x: 304
+        y: 187
+        width: 175
         height: 164
+      alignment: 9
+      pivot: {x: 0.5426564, y: 0.00000018608279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74eacde670589d548a60b05d229e1058
+      internalID: -1524073258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (3)_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 172
+        width: 262
+        height: 180
+      alignment: 9
+      pivot: {x: 0.46794838, y: 0.00000050862633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba7bf02ce1a6e74f81676a9cd55c0ab
+      internalID: 801917097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (3)_3
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 117
+        width: 313
+        height: 235
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,62 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480ac8aa4a9b3334cbfc133152390655
-      internalID: 1482557017
+      spriteID: d652ee2348de80e45ac2bc328097f363
+      internalID: -765260140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_skill1_2
+      name: spritesheet (3)_4
       rect:
         serializedVersion: 2
-        x: 658
-        y: 319
-        width: 261
-        height: 178
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e37e8a2b0d1c264486dfc3f547b648d
-      internalID: -1011340060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_skill1_3
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 313
-        width: 312
-        height: 233
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 427f788870b985d41872bcb3e44b977c
-      internalID: -1904984720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_skill1_4
-      rect:
-        serializedVersion: 2
-        x: 1309
-        y: 311
+        x: 1291
+        y: 39
         width: 185
-        height: 311
+        height: 313
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,19 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da84cafc9b95e0049afee1339d74ff34
-      internalID: 541036700
+      spriteID: 1439cb72cfb5718469aca39cea3581b6
+      internalID: 1154343233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_skill1_5
+      name: spritesheet (3)_5
       rect:
         serializedVersion: 2
-        x: 60
-        y: 12
-        width: 174
+        x: 1556
+        y: 187
+        width: 175
         height: 164
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -242,20 +242,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b48cae0bb86f5244b5bf217713ceecb
-      internalID: 669812223
+      spriteID: 1458a5d7bf87a7d4fa009ea66c95c332
+      internalID: -1586565221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_skill1_6
+      name: spritesheet (3)_6
       rect:
         serializedVersion: 2
-        x: 346
-        y: 8
-        width: 261
-        height: 178
+        x: 1809
+        y: 172
+        width: 263
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4432359, y: 0.0000003390842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d88864ea8bf704bba1c428232c43dc
+      internalID: 1176111252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (3)_7
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 117
+        width: 314
+        height: 235
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,29 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2333657089dd4c04a88017f34173e5e1
-      internalID: 68406260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_skill1_7
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 2
-        width: 312
-        height: 233
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25256d679cacd884eb1cbe9954ee8fdc
-      internalID: -764288352
+      spriteID: 49e0937f2fafa0942b8d74704bac0c20
+      internalID: -1044611480
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Crimson Balrog_skill1_0: 879698024
-      Crimson Balrog_skill1_1: 1482557017
-      Crimson Balrog_skill1_2: -1011340060
-      Crimson Balrog_skill1_3: -1904984720
-      Crimson Balrog_skill1_4: 541036700
-      Crimson Balrog_skill1_5: 669812223
-      Crimson Balrog_skill1_6: 68406260
-      Crimson Balrog_skill1_7: -764288352
+      spritesheet (3)_0: 1637363260
+      spritesheet (3)_1: -1524073258
+      spritesheet (3)_2: 801917097
+      spritesheet (3)_3: -765260140
+      spritesheet (3)_4: 1154343233
+      spritesheet (3)_5: -1586565221
+      spritesheet (3)_6: 1176111252
+      spritesheet (3)_7: -1044611480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

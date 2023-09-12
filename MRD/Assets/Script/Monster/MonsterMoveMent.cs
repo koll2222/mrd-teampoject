@@ -2,31 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterMoveMent : MonsterProperty
+public class MonsterMoveMent : BattleSystem
 {
-    [SerializeField] protected float moveSpeed = 1f;
-    [SerializeField] protected int nextPoint = 0;
-    [SerializeField] protected Transform[] wayPoint;
-    protected void moveing()
+    public float testspeed = 1;
+    private void Awake()
+    {
+        m_movePoint = SpawnerManager.m_wayPoints;
+    }
+    protected void Moveing()
     {
         myAnim.SetBool("isMoving", true);
-        float delta = moveSpeed * Time.deltaTime;
-        if (nextPoint >= 3)
+        myRenderer.flipX = m_nextPoint >= 3 ? false : true;
+
+        float delta = m_moveSpeed * Time.deltaTime* testspeed;
+        transform.position = Vector2.MoveTowards(transform.position, m_movePoint[m_nextPoint].transform.position, delta);
+
+        if (transform.position == m_movePoint[m_nextPoint].transform.position)
         {
-            myRenderer.flipX = false;
+            m_nextPoint++;
         }
-        else
+
+        if (m_nextPoint == m_movePoint.Length)
         {
-            myRenderer.flipX = true;
-        }
-        transform.position = Vector2.MoveTowards(transform.position, wayPoint[nextPoint].transform.position, delta);
-        if (transform.position == wayPoint[nextPoint].transform.position)
-        {
-            nextPoint++;
-        }
-        if (nextPoint == wayPoint.Length)
-        {
-            nextPoint = 0;
+            m_nextPoint = 0;
         }
     }
 }

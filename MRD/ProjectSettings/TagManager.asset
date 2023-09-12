@@ -14,8 +14,8 @@ TagManager:
   - PlayerGround
   - MonsterGround
   - Monster
-  - 
-  - 
+  - Boss
+  - Player
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Unit
     uniqueID: 304171813
+    locked: 0
+  - name: Skill
+    uniqueID: 807273753
     locked: 0

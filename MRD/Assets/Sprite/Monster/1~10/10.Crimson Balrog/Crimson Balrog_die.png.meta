@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f002975dd4808dc418b58a3463fdaec2
+guid: 7599d1fe1935ce84fa08ce705f0e666b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,11 +123,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crimson Balrog_die_0
+      name: spritesheet_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1182
+        x: 5
+        y: 381
         width: 148
         height: 330
       alignment: 7
@@ -137,186 +137,186 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c904491fc55c594cae978f79bf60378
-      internalID: -438345952
+      spriteID: 7c117aa277e64734d98e3be1208c55d8
+      internalID: 1516779119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_1
+      name: spritesheet_1
       rect:
         serializedVersion: 2
         x: 163
-        y: 1182
+        y: 379
         width: 157
         height: 332
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5259864, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93279c37dfcd5354798d78db2813dfec
-      internalID: 383847521
+      spriteID: 13705f55669cce64ab48e4874d047ef2
+      internalID: -2018947339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_2
+      name: spritesheet_2
       rect:
         serializedVersion: 2
-        x: 322
-        y: 1182
+        x: 330
+        y: 386
         width: 156
         height: 325
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5348697, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 817a0ca45b11cc64a9e6aa3bb1fe6567
-      internalID: -891888884
+      spriteID: b60cee2455dca3f41aa2ec074e36be65
+      internalID: -989560109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_3
+      name: spritesheet_3
       rect:
         serializedVersion: 2
-        x: 481
-        y: 1158
+        x: 496
+        y: 383
         width: 143
-        height: 347
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 328
+      alignment: 9
+      pivot: {x: 0.60460997, y: 0.016585002}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9683e9e30af53224895a0287e76ff113
-      internalID: -2037844437
+      spriteID: b26700ec64830cd4db42b1abbc5a0f8c
+      internalID: -473240317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_4
+      name: spritesheet_4
       rect:
         serializedVersion: 2
-        x: 642
-        y: 1148
+        x: 649
+        y: 375
+        width: 137
+        height: 336
+      alignment: 9
+      pivot: {x: 0.6290439, y: -0.008093698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2833884e4d42f2145b1ba23eb6488d71
+      internalID: 1701422220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
         width: 136
         height: 349
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6199935, y: 0.091968626}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9ac2494083aa964fadf1a15fc1c2664
-      internalID: 1120251298
+      spriteID: 106969228261e4c41a9cd2357f852b51
+      internalID: 1342645431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_5
+      name: spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 760
+        x: 151
+        y: 10
         width: 137
         height: 345
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6199935, y: 0.11561952}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c163279a2f5b6da4f9e1e0ba5a75c2a8
-      internalID: -1022003232
+      spriteID: d22c665ac7102a8498b4c23f8f283757
+      internalID: -1257167584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_6
+      name: spritesheet_7
       rect:
         serializedVersion: 2
-        x: 161
-        y: 760
+        x: 298
+        y: 9
         width: 137
         height: 345
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6199935, y: 0.1156195}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ea142a8bf231ba429e68651b54d0f2b
-      internalID: -2045964899
+      spriteID: 515010dd666b9ab44bbbf1f773327fb3
+      internalID: -744724988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_7
+      name: spritesheet_8
       rect:
         serializedVersion: 2
-        x: 321
-        y: 774
+        x: 446
+        y: 9
         width: 136
-        height: 331
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 346
+      alignment: 9
+      pivot: {x: 0.6299928, y: 0.1156195}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5393ceb2c1506b4da85a48320d41ce5
-      internalID: 1060690203
+      spriteID: 851b81f519768124397c16840a7d87a0
+      internalID: -24883026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crimson Balrog_die_8
+      name: spritesheet_9
       rect:
         serializedVersion: 2
-        x: 480
-        y: 797
-        width: 137
-        height: 343
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d0c11f43960cd444b49dea564840118
-      internalID: 331371285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_9
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 807
+        x: 649
+        y: 29
         width: 137
         height: 329
       alignment: 7
@@ -326,197 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7cbc06aed011af4a8c9bc7b874406e8
-      internalID: 584123858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 427
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdbb304ac5fe6de4cb3d8e0509b8c131
-      internalID: 168057871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_11
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 427
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2bd8ebb70e999d4d91f8812a8bde455
-      internalID: -1716271290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_12
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 427
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34deb24df2532674cbece19f9b6ce96a
-      internalID: 134368317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_13
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 427
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce55240725f125a41beb30421b4db778
-      internalID: 342394634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_14
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 427
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9d35767a08ea594cbb84e64ae1da522
-      internalID: -913716578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 47
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c34075437965b14fabb5fcc38792678
-      internalID: -1161233689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_16
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 47
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 014df672b9e9f7e4ea7b4a0f43689acf
-      internalID: -1516599335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_17
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 47
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8845ac192a6d26a42a90fbaa6de0fb24
-      internalID: 59841846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Crimson Balrog_die_18
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 47
-        width: 137
-        height: 329
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ed80e57bf3a2df40870f94964639d8d
-      internalID: 954067718
+      spriteID: b2ab8c2a6d58a1b488d18190697bb35c
+      internalID: 112038239
       vertices: []
       indices: 
       edges: []
@@ -532,25 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Crimson Balrog_die_0: -438345952
-      Crimson Balrog_die_1: 383847521
-      Crimson Balrog_die_10: 168057871
-      Crimson Balrog_die_11: -1716271290
-      Crimson Balrog_die_12: 134368317
-      Crimson Balrog_die_13: 342394634
-      Crimson Balrog_die_14: -913716578
-      Crimson Balrog_die_15: -1161233689
-      Crimson Balrog_die_16: -1516599335
-      Crimson Balrog_die_17: 59841846
-      Crimson Balrog_die_18: 954067718
-      Crimson Balrog_die_2: -891888884
-      Crimson Balrog_die_3: -2037844437
-      Crimson Balrog_die_4: 1120251298
-      Crimson Balrog_die_5: -1022003232
-      Crimson Balrog_die_6: -2045964899
-      Crimson Balrog_die_7: 1060690203
-      Crimson Balrog_die_8: 331371285
-      Crimson Balrog_die_9: 584123858
+      spritesheet_0: 1516779119
+      spritesheet_1: -2018947339
+      spritesheet_2: -989560109
+      spritesheet_3: -473240317
+      spritesheet_4: 1701422220
+      spritesheet_5: 1342645431
+      spritesheet_6: -1257167584
+      spritesheet_7: -744724988
+      spritesheet_8: -24883026
+      spritesheet_9: 112038239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
